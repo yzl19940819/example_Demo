@@ -42,7 +42,7 @@ paddlex --split_dataset --format VOC --dataset_dir dataset --val_value 0.2 --tes
   ```
 
 ### 3 模型选择
-PaddleX提供了丰富的视觉模型，在目标检测中提供了RCNN和YOLO系列模型。在本项目中采用yoloV3作为检测模型进行钢筋计数。
+PaddleX提供了丰富的视觉模型，在目标检测中提供了RCNN和YOLO系列模型。在本项目中采用Faster-RCNN作为检测模型进行钢筋计数。
 
 ### 4 模型训练
 在项目中，我们采用yolov3作为钢筋检测的模型。具体代码请参考[train.py](./code/train.py)。
