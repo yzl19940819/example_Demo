@@ -45,6 +45,7 @@ opt.run()
 PaddleX官网提供了详细的安卓[部署教程](https://paddlex.readthedocs.io/zh_CN/release-1.3/deploy/paddlelite/android.html)。
 
 如果用户训练好了自己的钢筋检测模型，想要替换部署，那么只需要按照前面的步骤准备好Lite模型(.nb文件)和yml配置文件，然后在Android Studio的project视图中进行替换操作。
+
 **替换操作：**
 * **替换nb文件** 将.nb文件拷贝到/src/main/assets/model/目录下, 根据.nb文件的名字，修改文件/src/main/res/values/strings.xml中的MODEL_PATH_DEFAULT；
 * **替换yml文件** 将.yml文件拷贝到/src/main/assets/config/目录下，根据.yml文件的名字，修改文件/src/main/res/values/strings.xml中的YAML_PATH_DEFAULT；
@@ -56,4 +57,4 @@ PaddleX官网提供了详细的安卓[部署教程](https://paddlex.readthedocs.
 项目效果如下图所示，默认打开app后自动加载模型，点击predict即可执行预测，预测结果在底部显示（输出钢筋计数结果和推理时间）。
 
 <div align="center">
-<img src="./images/phone_pic.jpg"  width = "1000" />              </div>
+<img src="./demo.jpg"  width = "400" />              </div>
